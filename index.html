@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutricionista Saúde & Vida</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            width: 100%;
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        .section:nth-child(even) {
+            background: #f4f4f4;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 400px;
+            margin-top: 20px;
+        }
+
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nutricionista Saúde & Vida</h1>
+    </header>
+
+    <section class="section">
+        <h2>Sobre Nós</h2>
+        <p>Profissional qualificado para ajudar você a ter uma alimentação saudável e equilibrada.</p>
+    </section>
+
+    <section class="section">
+        <h2>Serviços Oferecidos</h2>
+        <p>Avaliação nutricional, planos alimentares personalizados e acompanhamento contínuo.</p>
+    </section>
+
+    <section class="section">
+        <h2>Vantagens e Benefícios</h2>
+        <p>Melhoria na saúde, aumento da disposição e bem-estar através da alimentação correta.</p>
+    </section>
+
+    <section class="section">
+        <h2>Entre em Contato</h2>
+        <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="E-mail" required>
+            <textarea placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
